@@ -12,6 +12,9 @@ namespace Loja.Repositorios.SqlServer.ModelConfiguration
                 .HasMaxLength(200);
             Property(p => p.Preco)//configuração do preço
                 .HasPrecision(9, 2);
+            HasRequired(p => p.Categoria);
+
+
             HasOptional(p => p.Imagem)///configuração da tabela imagem
                 .WithRequired(pi => pi.Produto)
                 .WillCascadeOnDelete(true);

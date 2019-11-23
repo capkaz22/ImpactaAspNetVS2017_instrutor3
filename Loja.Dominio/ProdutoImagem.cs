@@ -6,7 +6,7 @@
         public byte[] Bytes { get; set; }//vetor de bytes no sqlserver
         public string ContentType { get; set; }///
 
-        public Produto Produto { get; set; }
+        public virtual Produto Produto { get; set; }
 
     }
 }
