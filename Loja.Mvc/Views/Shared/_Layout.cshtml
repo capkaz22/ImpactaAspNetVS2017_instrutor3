@@ -27,6 +27,7 @@
                     <li>@Html.ActionLink("Contato", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Produtos", "Index", "Produtos", new { area = "Vendas"}, new { })</li>
                 </ul>
+                @Html.Partial("_CulturePartial")
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
